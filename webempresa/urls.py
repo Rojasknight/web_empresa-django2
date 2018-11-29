@@ -27,8 +27,8 @@ urlpatterns = [
 
 # validamos si estamos en modo debug
 if settings.DEBUG:
-    # para usar archivos staticos(la imagen)
+    # para usar archivos staticos(img)
     from django.conf.urls.static import static
 
-    # agregar a los patrones de url, la ruta de la imagen.
+    # agregar a los patrones de url, path de la imagen.
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
